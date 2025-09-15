@@ -33,3 +33,5 @@ Type 'q()' to quit R.
 > hist(rundata$FirstRun)
 > ?hist
 > hist(rundata$FirstRun, ylab = "y-axis title", xlab = "x-axis title", main = "main title")
+> dens <- density(rundata$FirstRun)
+> plot(dens)
