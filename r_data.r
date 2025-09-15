@@ -32,3 +32,4 @@ Type 'q()' to quit R.
    2.64   23.54   29.24   28.74   34.21   56.14 
 > hist(rundata$FirstRun)
 > ?hist
+> hist(rundata$FirstRun, ylab = "y-axis title", xlab = "x-axis title", main = "main title")
