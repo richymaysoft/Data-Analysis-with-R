@@ -35,3 +35,16 @@ Type 'q()' to quit R.
 > hist(rundata$FirstRun, ylab = "y-axis title", xlab = "x-axis title", main = "main title")
 > dens <- density(rundata$FirstRun)
 > plot(dens)
+> integrate(convertToFunc, lower=20, upper=25)
+0.1604317 with absolute error < 2.3e-06
+> shapiro.test(rundata$FirstRun)
+
+	Shapiro-Wilk normality test
+
+data:  rundata$FirstRun
+W = 0.98583, p-value = 0.371
+
+> plot(density(rundata$FirstRun), col="red")
+> lines(density(rundata$SecondRun), col="green")
+> legend("bottom", legend = c("First run","Second
++  run"), fill=c("red","green"))
