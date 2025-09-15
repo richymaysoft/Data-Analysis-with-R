@@ -25,3 +25,10 @@ Type 'q()' to quit R.
 [81] 13.87  7.93 28.84 20.11 19.00 25.50 25.39 23.78 37.26 26.95 35.74 21.08 47.78 27.74 34.71 18.91 36.19 32.93 33.36
 > mean(rundata$FirstRun)
 [1] 28.7396
+> sd(rundata$FirstRun)
+[1] 9.53072
+> summary(rundata$FirstRun)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   2.64   23.54   29.24   28.74   34.21   56.14 
+> hist(rundata$FirstRun)
+> ?hist
